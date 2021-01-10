@@ -13,12 +13,14 @@ Here is a small example:
 sp = spell.Spell()
 sp.same_words(words_list=['сделонныый', 'сссделанный', 'хорошо'])
 `
+
 Here is the output:
 
 `
 {'сделонныый': ['сссделанный'], 'сссделанный': ['сделонныый'], 'хорошо': []}
 `
 
+So, the `same_words()` method returns dictionary, where keys are the word from `words_list`, values -- same (similar) words from this `words_list`
 Another example -- detecting the correct word from given dictionary of correct words:
 
 `
